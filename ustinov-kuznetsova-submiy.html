@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<style>
+	html{
+	--acc-color-1:#8631da;
+	--acc-color-2:#dc3545;
+	--acc-color-3:#33E6FF;
+	--acc-color-4:#36FF33;
+	--dialog-width:29rem;
+	--dialog-height:16rem;
+	--radius:1rem;
+
+	}
+	body{
+	background:var(--acc-color-1);
+	.dialog{
+	padding:var(--radius);
+	text-align:center;
+	border-radius:var(--radius);
+	position:fixed;
+	top:calc((100vh - var(--dialog-height))/2);
+	left:calc((100% - var(--dialog-width))/2);
+	width:var(--dialog-width);
+	height:var(--dialog-height);
+	background:var(--acc-color-2);
+
+	}
+	input{
+	outline:none;
+	border:solid 2px var(--acc-color-3);
+	border-radius:var(--radius);
+	padding:0.5rem;
+
+	}
+	input:focus{
+	border:solid 6px var(--acc-color-4);
+	}
+	
+	button{
+	margin-top:var(--radius);
+	border-radius:var(--radius);
+	padding:0.5rem;
+	width:70%;
+	background:var(--acc-color-3);
+
+	}
+	button:active{
+	filter:blur(3px);
+	
+	}
+	
+</style>
+</head>	
+<body id="main" class="bg-light">
+
+<div class="shadow dialog">
+	<h1>Buy Now!</h1>
+	<input type="text" id="email" placeholder="email@server.com"/>
+	<input type="text" id="nickname" placeholder="email@server.com"/>
+	<button type="button">Send a message</button>
+</div>
+
+</body>
+</html>
